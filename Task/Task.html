@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Task.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Salsa&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="logo" style="font-family: 'Salsa', sans-serif;">
+        <h1>TOPZ STORE</h1>
+        <h6>&nbsp&nbsp&nbsp&nbsp&nbsp  Design made from Nature</h6>
+        
+      </div>
+
+    <div class="main">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Features </a>
+                        </li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li>
+                            <form class="navbar-form" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!----- Content goes here ----->
+        </div>
+
+        <!-- Add an image after the navbar in light mode -->
+        <div class="light-mode-image">
+            <div class="overlay-text">
+                <h2>Living Room</h2>
+                <h1>Furniture 2017</h1>
+            </div>
+            <div class="sticker">
+                <img src="/image/sale.png" alt="Sticker">
+            </div>
+            <img src="/image/img1.jpg" alt="Light Mode Image">
+        </div>
+        <div class="sub-images">
+            <div class="sub-image">
+                <div class="sticker">
+                    <img src="/image/shop.png" alt="Sticker">
+                </div>
+                <img src="/image/img4.jpg" alt="Sub Image 1"><br><br>
+                <p><b>KATE SPACE NEWYORK</b></p>
+                <h6>SHOP BY NOW ></h6>
+            </div>
+            <div class="sub-image">
+                <div class="sticker">
+                    <img src="/image/shop.png" alt="Sticker">
+                </div>
+                <img src="/image/img5.jpg" alt="Sub Image 2"><br><br>
+                <p><b>#LANDGATHOME</b></p>
+                <h6>SHARE YOUR L&G STYLES ></h6>
+            </div>
+
+
+            <div class="container">
+                <nav class="navbar navbar-default custom-navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header mr-4">
+                            <a class="navbar-brand salsa-font" href="#">NEW ARRIVALS</a>
+                        </div>
+                        <ul class="nav navbar-nav ml-4">
+                            <li><a href="#">Recliners</a></li>
+                            <li><a href="#">Chair</a></li>
+                            <li><a href="#">Lamp</a></li>
+                            <li><a href="#">Sofa</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="container">
+                <div class="product-container">
+                    <img src="/image/chair.jpg" alt="Chair" class="flipkart-image">
+                    <h3 class="product-name">Chair</h3>
+                    <p class="product-amount">$50.00</p>
+                    <button class="cart-button" onclick="addToCart('Chair')">Add to Cart</button>
+                </div>
+                
+                <div class="product-container">
+                    <img src="/image/lamp.jpg" alt="Lamp" class="flipkart-image">
+                    <h3 class="product-name">Lamp</h3>
+                    <p class="product-amount">$25.00</p>
+                    <button class="cart-button" onclick="addToCart('Lamp')">Add to Cart</button>
+                </div>
+                
+                <div class="product-container">
+                    <img src="/image/light.jpg" alt="Light" class="flipkart-image">
+                    <h3 class="product-name">Light</h3>
+                    <p class="product-amount">$30.00</p>
+                    <button class="cart-button" onclick="addToCart('Light')">Add to Cart</button>
+                </div>
+                
+                <div class="product-container">
+                    <img src="/image/swing.png" alt="Swing" class="flipkart-image">
+                    <h3 class="product-name">Swing</h3>
+                    <p class="product-amount">$80.00</p>
+                    <button class="cart-button" onclick="addToCart('Swing')">Add to Cart</button>
+                </div>
+            </div>
+
+                
+            <div class="deals-container">
+                <h1 class="deals-heading">Exclusive Deals of the Week</h1>
+                <div class="border-image">
+                    <div class="transparent-box">
+                        <div class="countdown-container">
+                            <div class="countdown-box" id="days">2850 DAYS</div>
+                            <div class="countdown-box" id="hours">12 HOURS</div>
+                            <div class="countdown-box" id="minutes">9 MINS</div>
+                            <div class="countdown-box" id="seconds">51 SECS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        
+            <div class="section-container">
+                <div class="hot-trend">
+                    <h2 class="salsa-font">Hot Trend</h2>
+                    <img src="/image/chairs.webp" alt="Hot Trend Image">
+                </div>
+            
+                <div class="testimonial">
+                    <h2 class="salsa-font">Testimonial</h2>
+                    <div class="slideshow-container">
+                        <img class="slide" src="/image/test1.png" alt="Testimonial Image 1">
+                        <img class="slide" src="/image/test2.jpg" alt="Testimonial Image 2">
+                        <img class="slide" src="/image/test3.png" alt="Testimonial Image 3">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="opposite-images-container">
+                <h2 class="salsa-font">SHOP BY ROOM</h2>
+                <div class="opposite-images">
+                    <div class="image-container">
+                        <img src="/image/living.jpg" alt="Living Room">
+                        <div class="overlay-text">Living Room</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="/image/bedroom.webp" alt="Bedroom">
+                        <div class="overlay-text">Bedroom</div>
+                    </div>
+                </div>
+            </div>
+           
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                
+                    function showSlides() {
+                        let slides = document.getElementsByClassName("slide");
+                
+                        for (let i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                
+                        slideIndex++;
+                
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1;
+                        }
+                
+                        slides[slideIndex - 1].style.display = "block";
+                        setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+                    }
+
+                function addToCart(productName) {
+                    // Implement your logic to add the product to the cart
+                    alert('Added ' + productName + ' to the cart!');
+                }
+            </script>
+            
+           
+            
+        
+         
+</div>
+<footer class="bg-primary text-white text-center text-lg-start salsa-font">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">TOPZSTORE</h5>
+            
+          <p>
+            Queen Size King Size Beds Coffee Tables, Dining Sets,
+            Recliners, Sofa cum Beds, Rocking chairs, Cabinets & 
+            Sideboards, Books Shelves, TV Unit, Wardrobes, Garden &
+            Outdoor, Bar Cabinets, Wall Shelves, Wall Stickers and
+            Decats, Photo Frames, Bed Sheets, Mattresses, Blankets & Quits,
+            Table Linen, Water Purifier, Gas Stoves, Ovens Geysers.
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"></h5>
+  
+          <ul class="list-unstyled mb-0">
+            <br>
+            <li>
+              <a href="#!" class="text-white">About</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Career</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">News</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Toptalk</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Need Help?</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Call 022-61576157</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Return & Refund</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Track Your Order</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Ask Price</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-white" href="https://topzstore.com/">Topzstore.com</a>
+    </div>
+    <!-- Copyright -->
+
+    </div>
+  </footer>
+  
+</div>
+</body>
+</html>
